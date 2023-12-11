@@ -35,12 +35,12 @@ class TaskV1 extends ModelDb {
 
   factory TaskV1.fromMap(Map<String, dynamic> map) {
     return TaskV1(
-      status: map['status'] as int,
-      title: map['title'] as String,
-      content: map['content'] as String,
       uid: map['uid'] as String,
       created_at: DateTime.parse(map['created_at'] as String),
       updated_at: DateTime.parse(map['updated_at'] as String),
+      status: map['status'] as int,
+      title: map['title'] as String,
+      content: map['content'] as String,
     );
   }
 

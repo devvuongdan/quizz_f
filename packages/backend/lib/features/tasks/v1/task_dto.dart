@@ -43,20 +43,4 @@ class TaskDto {
       status: status ?? this.status,
     );
   }
-
-  @override
-  String toString() =>
-      'TaskDto(title: $title, content: $content, status: $status)';
-
-  @override
-  bool operator ==(covariant TaskDto other) {
-    if (identical(this, other)) return true;
-
-    return other.title == title &&
-        other.content == content &&
-        other.status == status;
-  }
-
-  @override
-  int get hashCode => title.hashCode ^ content.hashCode ^ status.hashCode;
 }

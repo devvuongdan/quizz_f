@@ -1,4 +1,5 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
+// ignore_for_file: public_member_api_docs, sort_constructors_first,, lines_longer_than_80_chars
+// ignore_for_file:avoid_unused_constructor_parameters
 import 'dart:convert';
 
 import 'package:backend/core/models/res/result.dart';

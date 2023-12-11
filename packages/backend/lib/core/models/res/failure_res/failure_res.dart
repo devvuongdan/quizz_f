@@ -81,18 +81,4 @@ class FailureResponse {
 
   factory FailureResponse.fromJson(String source) =>
       FailureResponse.fromMap(json.decode(source) as Map<String, dynamic>);
-
-  @override
-  String toString() =>
-      'FailureResponse(result: $result, time: $time, code: $code)';
-
-  @override
-  bool operator ==(covariant FailureResponse other) {
-    if (identical(this, other)) return true;
-
-    return other.result == result && other.time == time && other.code == code;
-  }
-
-  @override
-  int get hashCode => result.hashCode ^ time.hashCode ^ code.hashCode;
 }
