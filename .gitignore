@@ -1,0 +1,5 @@
+.DS_store
+pubspec.lock
+**.g.dart
+**.freezed.dart
+pubspec_overrides.yaml

@@ -1,0 +1,4 @@
+name: quizz_f
+
+packages:
+  - packages/*
