@@ -145,7 +145,7 @@ class PostgresDbHelper {
 
     if (result.isEmpty) {
       await connection.close();
-      throw NotFoundException(time: DateTime.now().toIso8601String());
+      throw NotFoundException(time: DateTime.now());
     } else {
       final queries = <String>[];
       for (final key in newObject.keys) {
